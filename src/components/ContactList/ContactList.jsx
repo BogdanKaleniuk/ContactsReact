@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 import { Div, ContactTitle, ContactWrapper } from './ContactList.styled';
-import { getContacts, getFilter } from 'redux/selectors';
+import { getContacts, getFilter } from 'redux/contacts/selectors';
 import ContactItem from '../Contact/Contact';
 
 export default function ContactList({ title }) {

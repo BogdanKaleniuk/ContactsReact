@@ -1,9 +1,9 @@
 import { PropTypes } from 'prop-types';
 import { FindWrapper, FindTitle, Input } from './Filter.styled';
 import { useDispatch } from 'react-redux';
-import { setStatusFilter } from '../../redux/filterSlice';
+import { setStatusFilter } from '../../redux/contacts/filterSlice';
 
-export default function Filter() {
+export function Filter() {
   const dispatch = useDispatch();
 
   const onFilterChange = event => {
