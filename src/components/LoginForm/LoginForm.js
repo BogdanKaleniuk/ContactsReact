@@ -14,7 +14,12 @@ export const LoginForm = () => {
         password: form.elements.password.value,
       })
     );
+<<<<<<< HEAD
+    
+    // form.reset();
+=======
     form.reset();
+>>>>>>> 464a808e06d48a53626d4cca498559177f0981db
   };
 
   return (

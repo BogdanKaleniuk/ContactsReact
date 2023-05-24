@@ -2,7 +2,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from '../../redux/contacts/operations';
 // import css from './ContactEditor.module.css';
 import { Formik } from 'formik';
+<<<<<<< HEAD
+import { selectContacts } from 'redux/contacts/selectors';
+=======
 import { getContacts } from 'redux/contacts/selectors';
+>>>>>>> 464a808e06d48a53626d4cca498559177f0981db
 import { FormBook, Input, Label, Btn, Error } from './ContactEditor.styled';
 import * as yup from 'yup';
 // import { useState } from 'react';
@@ -32,7 +36,11 @@ export const ContactEditor = () => {
   // const onChangeName = e => setName(e.currentTarget.value);
   // const onChangeNumber = e => setNumber(e.currentTarget.value);
   const dispatch = useDispatch();
+<<<<<<< HEAD
+  const contacts = useSelector(selectContacts);
+=======
   const contacts = useSelector(getContacts);
+>>>>>>> 464a808e06d48a53626d4cca498559177f0981db
   // const handleSubmit = values => {
   //   const findDuplicateName = (contact, newName) => {
   //     return contact.find(({ name }) => name.toLowerCase() === newName);
